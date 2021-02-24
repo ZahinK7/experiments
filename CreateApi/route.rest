@@ -1,0 +1,26 @@
+GET http://localhost:3000/db
+
+###
+
+GET http://localhost:3000/db/603480bad53a740f88f398e1
+
+###
+
+POST http://localhost:3000/db
+Content-Type: application/json
+
+{
+    "name": "Amazing Person",
+    "dbToChannel":"Web Dev Simplified"
+}
+
+###
+DELETE http://localhost:3000/db/603480bad53a740f88f398e1
+
+###
+PATCH  http://localhost:3000/db/603486fd3fcdb74d309a06f5
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
